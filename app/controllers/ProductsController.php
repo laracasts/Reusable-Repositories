@@ -2,7 +2,8 @@
 
 use Acme\Repos\Product\ProductRepository;
 
-class ProductsController extends \BaseController {
+class ProductsController extends \BaseController
+{
 
     /**
      * @var ProductRepository
@@ -17,15 +18,15 @@ class ProductsController extends \BaseController {
         $this->productRepo = $productRepo;
     }
 
-	/**
-	 * Display a single product
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		return $this->productRepo->getById($id);
-	}
+    /**
+     * Display a single product
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function show($id)
+    {
+        return $this->productRepo->getById($id);
+    }
 
 }
