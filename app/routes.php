@@ -1,18 +1,10 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-Route::get('/', function()
-{
-    return View::make('hello');
-});
+// Don't forget to bind your repo interface to an implementation
+// Service providers are helpful for this task. For this demo, though,
+// we'll add it here
+
+App::bind('Acme\Repos\Product\ProductRepository', 'Acme\Repos\Product\DbProductRepository');
+
 
 
