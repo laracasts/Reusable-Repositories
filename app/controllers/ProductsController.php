@@ -1,19 +1,19 @@
 <?php
 
-use Acme\Repos\Product\ProductRepository;
+use Acme\Repos\Product\ProductRepositoryInterface;
 
 class ProductsController extends \BaseController
 {
 
     /**
-     * @var ProductRepository
+     * @var ProductRepositoryInterface
      */
     private $productRepo;
 
     /**
-     * @param ProductRepository $productRepo
+     * @param ProductRepositoryInterface $productRepo
      */
-    function __construct(ProductRepository $productRepo)
+    function __construct(ProductRepositoryInterface $productRepo)
     {
         $this->productRepo = $productRepo;
     }
