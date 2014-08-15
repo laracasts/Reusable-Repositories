@@ -1,6 +1,6 @@
 <?php namespace Acme\Repos\Product;
 
-interface ProductRepository {
+interface ProductRepositoryInterface {
 
     /**
      * Fetch a record by id

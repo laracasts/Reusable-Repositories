@@ -3,7 +3,7 @@
 use Acme\Repos\DbRepository;
 use Product;
 
-class DbProductRepository extends DbRepository implements ProductRepository {
+class DbProductRepository extends DbRepository implements ProductRepositoryInterface {
 
     /**
      * @var Product
